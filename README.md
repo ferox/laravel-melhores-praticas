@@ -1,2 +1,1 @@
-# laravel-melhores-praticas
-Laravel Melhores Práticas
+# Laravel Melhores Práticas
