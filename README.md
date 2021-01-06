@@ -1,4 +1,4 @@
-# Laravel Melhores Práticas
+# Desenvolvendo as Melhores Práticas com o Laravel
 
 Esta biblioteca é uma tradução para o Português do Brasil do:
 
