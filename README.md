@@ -8,41 +8,41 @@ A biblioteca reúne as melhores práticas para codificação de aplicativos web 
 
 ## Índice
 
-[Princípio da responsabilidade única](#)
+[Princípio da responsabilidade única](#princípio-da-responsabilidade-única)
 
-[Modelos gordos, Controladoras magras](#)
+[Modelos gordos, Controladoras magras](#modelos-gordos-controladoras-magras)
 
-[Validação](#)
+[Validação](#validação)
 
-[A lógica de negócios deve ficar em classe de serviço](#)
+[A lógica de negócios deve ficar em classe de serviço](#a-lógica-de-negócios-deve-ficar-em-classe-de-serviço)
 
-[Não escreva código duplicado (do princípio de Don't Repeat Yourself)](#)
+[Não escreva código duplicado (do princípio de Don't Repeat Yourself)](#não-escreva-código-duplicado-do-princípio-de-dont-repeat-yourself)
 
-[Priorize o uso do Eloquent ORM (o ActiveRecord do Framework). Priorize também o uso das Collections ao invés dos arrays](#)
+[Priorize o uso do Eloquent ORM (o ActiveRecord do Framework). Priorize também o uso das Collections ao invés dos arrays](#priorize-o-uso-do-eloquent-orm-o-activerecord-do-framework-priorize-também-o-uso-das-collections-ao-invés-dos-arrays-vetores)
 
-[Atribuição em massa](#)
+[Atribuição em massa](#atribuição-em-massa)
 
-[Não execute queries diretamente nos templates do Blade, faça o uso de carregamento prematuro (eager loading). Esse é um problema do tipo N + 1](#))
+[Não execute queries diretamente nos templates do Blade, faça o uso de carregamento prematuro (eager loading). Esse é um problema do tipo N + 1](#não-execute-queries-diretamente-nos-templates-do-blade-faça-o-uso-de-carregamento-prematuro-eager-loading-esse-é-um-problema-do-tipo-n--1))
 
-[Comente seu código, mas faça o uso de métodos(funções) e de nomes de variáveis descritivos](#)
+[Comente seu código, mas faça o uso de métodos(funções) e de nomes de variáveis descritivos](#comente-seu-código-mas-faça-o-uso-de-métodosfunções-e-de-nomes-de-variáveis-descritivos)
 
-[Não coloque código de JavaScript e de CSS nos templates do Blade. Jamais coloque código html em classes PHP](#)
+[Não coloque código de JavaScript e de CSS nos templates do Blade. Jamais coloque código html em classes PHP](#não-coloque-código-de-javascript-e-de-css-nos-templates-do-blade-jamais-coloque-código-html-em-classes-php)
 
-[Fça uso de arquivos de configuração e de linguagens ao invés de mensagens de textos no código](#)
+[Faça uso de arquivos de configuração e de linguagens ao invés de mensagens de textos no código](#faça-uso-de-arquivos-de-configuração-e-de-linguagens-ao-invés-de-mensagens-de-textos-no-código)
 
-[Use somente ferramentas padronizadas desenvolvidas pela comunidade Laravel](#)
+[Use somente ferramentas padronizadas desenvolvidas pela comunidade Laravel](#use-somente-ferramentas-padronizadas-desenvolvidas-pela-comunidade-laravel)
 
-[Siga a convenção de nomes do PHP e do Laravel](#)
+[Siga a convenção de nomes do PHP e do Laravel](#siga-a-convenção-de-nomes-do-php-e-do-laravel)
 
-[Use sintaxes curtas e legíveis sempre que possível](#)
+[Use sintaxes curtas e legíveis sempre que possível](#use-sintaxes-curtas-e-legíveis-sempre-que-possível)
 
-[Use contêineres IoC (inversão de controle) ou Facades (interfaces estáticas) no lugar de Classes](#)
+[Use contêineres IoC (inversão de controle) ou Facades (interfaces estáticas) no lugar de Classes](#use-contêineres-ioc-inversão-de-controle-ou-facades-interfaces-estáticas-no-lugar-de-classes)
 
-[Não extraia informações diretamente do arquivo .env](#)
+[Não extraia informações diretamente do arquivo .env](#não-extraia-informações-diretamente-do-arquivo-env)
 
-[Salve datas em formatos padronizados. Use os modificadores de atributos das tabelas chamados de "accessors" e "mutators" para formatar datas](#)
+[Salve datas em formatos padronizados. Use os modificadores de atributos das tabelas chamados de "accessors" e "mutators" para formatar datas](#salve-datas-em-formatos-padronizados-use-os-modificadores-de-atributos-das-tabelas-chamados-de-accessors-e-mutators-para-formatar-as-datas)
 
-[Outras boas páticas](#)
+[Outras boas práticas](#outras-boas-práticas)
 
 ### **Princípio da responsabilidade única**
 
@@ -463,7 +463,7 @@ A maneira ideal para lidar com essa questão é usar algum pacote especializado 
 
 [🔝 Voltar ao índice](#)
 
-### **Fça uso de arquivos de configuração e de linguagens ao invés de mensagens de textos no código**
+### **Faça uso de arquivos de configuração e de linguagens ao invés de mensagens de textos no código**
 
 Péssimo:
 
@@ -666,7 +666,7 @@ public function getAtributoData($datas)
 
 [🔝 Voltar ao índice](#)
 
-### **Outras boas páticas**
+### **Outras boas práticas**
 
 Não coloque nenhum tipo de lógica nos arquivos de rotas.
 
