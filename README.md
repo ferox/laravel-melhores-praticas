@@ -22,11 +22,11 @@ A biblioteca reúne as melhores práticas para codificação de aplicativos web 
 
 [Atribuição em massa](#atribuição-em-massa)
 
-[Não execute queries diretamente nos templates do Blade, faça o uso de carregamento prematuro (eager loading). Esse é um problema do tipo N + 1](#não-execute-queries-diretamente-nos-templates-do-blade-faça-o-uso-de-carregamento-prematuro-eager-loading-esse-é-um-problema-do-tipo-n--1))
+[Não execute queries diretamente nos templates do Blade, faça o uso de carregamento prematuro (eager loading). Esse é um problema do tipo N + 1](#não-execute-queries-diretamente-nos-templates-do-blade-faça-o-uso-de-carregamento-prematuro-eager-loading-esse-é-um-problema-do-tipo-n--1)
 
-[Comente seu código, mas faça o uso de métodos(funções) e de nomes de variáveis descritivos](#comente-seu-código-mas-faça-o-uso-de-métodosfunções-e-de-nomes-de-variáveis-descritivos)
+[Comente seu código, mas faça o uso de métodos (funções) e de nomes de variáveis descritivos](#comente-seu-código-mas-faça-o-uso-de-métodosfunções-e-de-nomes-de-variáveis-descritivos)
 
-[Não coloque código de JavaScript e de CSS nos templates do Blade. Jamais coloque código html em classes PHP](#não-coloque-código-de-javascript-e-de-css-nos-templates-do-blade-jamais-coloque-código-html-em-classes-php)
+[Não coloque código de JavaScript e de CSS nos templates do Blade. Jamais coloque código HTML em classes PHP](#não-coloque-código-de-javascript-e-de-css-nos-templates-do-blade-jamais-coloque-código-html-em-classes-php)
 
 [Faça uso de arquivos de configuração e de linguagens ao invés de mensagens de textos no código](#faça-uso-de-arquivos-de-configuração-e-de-linguagens-ao-invés-de-mensagens-de-textos-no-código)
 
@@ -139,8 +139,8 @@ Péssimo:
 public function store(Request $request)
 {
     $request->validate([
-        'titulo' => 'required|max:255',
-        'descricao' => 'required',
+        'titulo'       => 'required|max:255',
+        'descricao'    => 'required',
         'publicado_em' => 'nullable|date',
     ]);
 
@@ -161,8 +161,8 @@ class PublicacaoRequest extends Request
     public function rules()
     {
         return [
-            'titulo' => 'required|max:255',
-            'descricao' => 'required',
+            'titulo'       => 'required|max:255',
+            'descricao'    => 'required',
             'publicado_em' => 'nullable|date',
         ];
     }
@@ -285,7 +285,7 @@ Publicacao::has('editor.perfil')->verificado()->latest()->get();
 
 ### **Atribuição em massa**
 
-O método mais eficaz para lidar com ataques de atribuição em massa é passar apenas os campos que foram validados ao invés de passar todos os dados da solicitação(requisição).
+O método mais eficaz para lidar com ataques de atribuição em massa é passar apenas os campos que foram validados ao invés de passar todos os dados da solicitação (requisição).
 
 Péssimo:
 
@@ -298,9 +298,9 @@ class Usuario extends Authenticatable {
 class UsuarioRequest extends Request {
  public function rules() {
    return [
-       'nome'             => 'string|required',
-       'email'            => 'email|required',
-       'senha'         => 'string|required|min:6',
+       'nome'              => 'string|required',
+       'email'             => 'email|required',
+       'senha'             => 'string|required|min:6',
        'confirmacao_senha' => 'same:password',
    ];
  }
@@ -329,9 +329,9 @@ class Usuario extends Authenticatable {
 class UsuarioRequest extends Request {
  public function rules() {
    return [
-       'nome'             => 'string|required',
-       'email'            => 'email|required',
-       'senha'         => 'string|required|min:6',
+       'nome'              => 'string|required',
+       'email'             => 'email|required',
+       'senha'             => 'string|required|min:6',
        'confirmacao_senha' => 'same:password',
    ];
  }
@@ -376,7 +376,7 @@ $usuarios = Usuario::with('perfil')->get();
 
 [🔝 Voltar ao índice](#)
 
-### **Comente seu código, mas faça o uso de métodos(funções) e de nomes de variáveis descritivos**
+### **Comente seu código, mas faça o uso de métodos (funções) e de nomes de variáveis descritivos**
 
 Péssimo:
 
@@ -396,7 +396,7 @@ if ($this->hasJoins())
 
 [🔝 Voltar ao índice](#)
 
-### **Não coloque código de JavaScript e de CSS nos templates do Blade. Jamais coloque código html em classes PHP**
+### **Não coloque código de JavaScript e de CSS nos templates do Blade. Jamais coloque código HTML em classes PHP**
 
 Péssimo:
 
@@ -628,7 +628,7 @@ Péssimo:
 $chaveApi = env('API_KEY');
 ```
 
-Bueno:
+Ótimo:
 
 ```php
 // config/api.php
