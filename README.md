@@ -151,7 +151,7 @@ public function store(Request $request)
 Ótimo:
 
 ```php
-public function store(PostRequest $request)
+public function store(PublicacaoRequest $request)
 {    
     ....
 }
